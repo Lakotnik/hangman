@@ -12,7 +12,8 @@ def printWelcome():
 # returns input if good, prints error and exits if not
 def validateInput(user_input):
 	for i in range(1,2):
-		if user_input == str(i)
+		if user_input == str(i):
+			
 	# if type(user_input) == int:
 	# 	if user_input <= 2 and user_input > 0:
 	# 		print("You have selected option {}.".format(user_input))
