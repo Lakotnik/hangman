@@ -39,6 +39,18 @@ class Picker:
 							exit()
 						else:
 							continue
+				else:
+					current_word = None # if we don't have a gamestate but a word is somehow still here, clear it
+					continue
+			else:
+				# we have a gamestate and hopefully a word, lets check for that first
+				if not current_word:
+					# then we're in a bit of trouble
+					current_gamestate = None # reset gamestate because we have no word and start over
+					continue
+				else:
+					# here we can do actual game logic then. Not just checking that everything is alright
+					
 
 
 
